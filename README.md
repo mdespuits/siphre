@@ -1,6 +1,6 @@
 # Siphre
 
-`Siphre` is a collection of ciphers ranging from basic to advanced ciphers for securing information.
+`Siphre` is a collection of ciphers ranging from basic to advanced for securing information.
 
 **Disclaimer:** _These ciphers are here for you to learn about cryptography and potentially create your own ciphers for your own security. I do *not* claim any responsibility if any information is compromised even when encoded by one of these ciphers._
 
@@ -8,7 +8,9 @@
 
 Add this line to your application's Gemfile:
 
-    gem 'siphre'
+```ruby
+gem 'siphre'
+```
 
 And then execute:
 
