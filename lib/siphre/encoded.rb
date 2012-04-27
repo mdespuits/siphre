@@ -4,6 +4,8 @@ module Siphre
 
   class Encoded
 
+    include Optionify
+
     def self.encode
       raise UnimplementedMethod, "The `encode' has not been defined"
     end
