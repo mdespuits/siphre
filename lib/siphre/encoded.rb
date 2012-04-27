@@ -1,18 +1,19 @@
 module Siphre
 
   class UnimplementedMethod < StandardError; end
+
   class Encoded
 
     def self.encode
-      raise Siphre::UnimplementedMethod
+      raise UnimplementedMethod, "The `encode' has not been defined"
     end
 
     def self.equal
-      raise Siphre::UnimplementedMethod
+      raise UnimplementedMethod, "The `equal' has not been defined"
     end
 
     def self.decode
-      raise Siphre::UnimplementedMethod
+      raise UnimplementedMethod, "The `decode' has not been defined"
     end
 
   end
