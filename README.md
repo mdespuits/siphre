@@ -8,9 +8,7 @@
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'siphre'
-```
+    gem 'siphre'
 
 And then execute:
 
@@ -22,7 +20,24 @@ Or install it yourself as:
 
 ## Usage
 
-_This gem is currently in development (or put simply, it's not done yet)._
+Using `Siphre` is simple. Say for example you wanted to encode `string` using the `Basic` Siphre.
+
+    Siphre::Basic.encode 'string'
+    => 'some-encoded-string'
+
+To check if a siphred string is equal to a plaintext string.
+
+    Siphre::Basic.equal 'some-encoded-string', 'string'
+    => true
+
+To decode a string, you would use a similar method.
+
+    Siphre::Basic.decode 'some-encoded-string'
+    => 'string'
+
+**Note**: while decoding is intentionally required as part of the library, it is __highly__ recommended that you __not__ use it in any production code as it may create a potential security breach.
+
+You may also pass options to the encode method which are defined in the documentation for each siphre.
 
 ## Contributing
 
